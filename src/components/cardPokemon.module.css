@@ -15,3 +15,9 @@
   transform: scale(1.05);
   box-shadow: 0px 0px 15px 0px #000000;
 }
+
+.img {
+  width: 30px;
+  align-self: flex-end;
+  margin: 15px;
+}

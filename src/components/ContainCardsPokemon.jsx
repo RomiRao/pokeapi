@@ -16,14 +16,7 @@ export default function ContainCardsPokemon() {
         <div className={styles.containCard}>
             {/* Al utilizar promise.all enviar mas info a cada Card */}
             {data.map((pokemon) => {
-                return (
-                    <CardPokemon
-                        id={pokemon.id}
-                        key={pokemon.name}
-                        name={pokemon.name}
-                        image={pokemon.sprites.front_default}
-                    />
-                );
+                return <CardPokemon key={pokemon.name} pokemon={pokemon} />;
             })}
         </div>
     );
